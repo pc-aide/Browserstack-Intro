@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-19T13:28:42.658704" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="test sauceLoginPage 12.0, Google Pixel 6, chrome" source="C:\Users\paul\robo_19\test_sauceLoginPage.robot">
+<test id="s1-s1-t1" name="Open Chrome On Android And Visit Saucedemo" line="12">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:21.281289" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:21.278437" elapsed="15.286348"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:27:36.567538" elapsed="0.438883"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:27:42.007832" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:27:37.007017" elapsed="5.004879"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:27:42.018677" elapsed="0.010081"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:21.217612" elapsed="20.815473"/>
+</test>
+<test id="s1-s1-t2" name="Remplir Champs Login Saucedemo" line="18">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:43.242363" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:43.239411" elapsed="15.992491"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:27:59.233699" elapsed="0.836504"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:02.073351" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:00.071466" elapsed="2.007080"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:02.089233" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@data-test='username']'</msg>
+<msg time="2025-06-19T13:28:02.951276" level="INFO">xpath criteria: //input[@data-test='username']</msg>
+<arg>xpath=//input[@data-test='username']</arg>
+<arg>standard_user</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:02.082639" elapsed="0.872636"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:02.963581" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@data-test='password']'</msg>
+<msg time="2025-06-19T13:28:03.678473" level="INFO">xpath criteria: //input[@data-test='password']</msg>
+<arg>xpath=//input[@data-test='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:02.957775" elapsed="0.724191"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:08.688094" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:03.684639" elapsed="5.007235"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:28:08.694865" elapsed="0.010339"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:43.237830" elapsed="25.468250"/>
+</test>
+<status status="PASS" start="2025-06-19T13:27:21.181000" elapsed="46.283000"/>
+</suite>
+<suite id="s1-s2" name="test sauceLoginPage OS X, Monterey, Safari, 15.6" source="C:\Users\paul\robo_19\test_sauceLoginPage.robot">
+<test id="s1-s2-t1" name="Open Chrome On Android And Visit Saucedemo" line="12">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:21.112604" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:21.109543" elapsed="10.534017"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:27:31.645140" elapsed="8.030147"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:27:44.680613" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:27:39.677909" elapsed="5.006384"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:27:44.687042" elapsed="0.009291"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:21.099755" elapsed="23.603314"/>
+</test>
+<test id="s1-s2-t2" name="Remplir Champs Login Saucedemo" line="18">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:46.123531" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:46.114638" elapsed="14.494127"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:28:00.610583" elapsed="8.868082"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:11.484952" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:09.481732" elapsed="2.004616"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:11.489443" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@data-test='username']'</msg>
+<msg time="2025-06-19T13:28:11.771945" level="INFO">xpath criteria: //input[@data-test='username']</msg>
+<arg>xpath=//input[@data-test='username']</arg>
+<arg>standard_user</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:11.487244" elapsed="0.285829"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:11.775462" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@data-test='password']'</msg>
+<msg time="2025-06-19T13:28:12.100299" level="INFO">xpath criteria: //input[@data-test='password']</msg>
+<arg>xpath=//input[@data-test='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:11.773831" elapsed="0.329415"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:17.109886" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:12.105052" elapsed="5.009168"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:28:17.116958" elapsed="0.010156"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:46.103372" elapsed="31.028562"/>
+</test>
+<status status="PASS" start="2025-06-19T13:27:21.068317" elapsed="57.647285"/>
+</suite>
+<suite id="s1-s3" name="test sauceLoginPage 15, iPhone 13, safari" source="C:\Users\paul\robo_19\test_sauceLoginPage.robot">
+<test id="s1-s3-t1" name="Open Chrome On Android And Visit Saucedemo" line="12">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:21.104326" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:21.101572" elapsed="28.710479"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:27:49.815237" elapsed="2.300567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:27:57.117442" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:27:52.116347" elapsed="5.004599"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:27:57.123668" elapsed="0.011737"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:21.070266" elapsed="36.072084"/>
+</test>
+<test id="s1-s3-t2" name="Remplir Champs Login Saucedemo" line="18">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:58.347469" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:58.345179" elapsed="31.502562"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:28:29.849631" elapsed="2.714784"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:34.569697" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:32.567462" elapsed="2.003273"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:34.573042" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@data-test='username']'</msg>
+<msg time="2025-06-19T13:28:35.032743" level="INFO">xpath criteria: //input[@data-test='username']</msg>
+<arg>xpath=//input[@data-test='username']</arg>
+<arg>standard_user</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:34.571402" elapsed="0.464724"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:35.045248" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@data-test='password']'</msg>
+<msg time="2025-06-19T13:28:35.552941" level="INFO">xpath criteria: //input[@data-test='password']</msg>
+<arg>xpath=//input[@data-test='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:35.038615" elapsed="0.518038"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:40.562799" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:35.559410" elapsed="5.007149"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:28:40.569494" elapsed="0.014487"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:58.343763" elapsed="42.242562"/>
+</test>
+<status status="PASS" start="2025-06-19T13:27:20.984965" elapsed="80.685204"/>
+</suite>
+<suite id="s1-s4" name="test sauceLoginPage 15, iPhone 13, chrome" source="C:\Users\paul\robo_19\test_sauceLoginPage.robot">
+<test id="s1-s4-t1" name="Open Chrome On Android And Visit Saucedemo" line="12">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:21.104918" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:21.102261" elapsed="22.461204"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:27:43.564040" elapsed="2.235321"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:27:50.805258" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:27:45.802038" elapsed="5.006936"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:27:50.811728" elapsed="0.008769"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:21.099176" elapsed="29.724297"/>
+</test>
+<test id="s1-s4-t2" name="Remplir Champs Login Saucedemo" line="18">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-19T13:27:51.943245" level="INFO">Completed setup!</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>browserName=${BROWSER}</arg>
+<arg>realMobile=true</arg>
+<arg>name=RobotFrameworkTest</arg>
+<arg>browserstack.debug=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-19T13:27:51.935956" elapsed="27.778456"/>
+</kw>
+<kw name="Go To Url" owner="AppiumLibrary">
+<arg>${URL}</arg>
+<doc>Opens URL in default web browser.</doc>
+<status status="PASS" start="2025-06-19T13:28:19.715236" elapsed="2.724383"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:24.445393" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:22.442252" elapsed="2.006841"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:24.460174" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@data-test='username']'</msg>
+<msg time="2025-06-19T13:28:24.857971" level="INFO">xpath criteria: //input[@data-test='username']</msg>
+<arg>xpath=//input[@data-test='username']</arg>
+<arg>standard_user</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:24.453976" elapsed="0.407969"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-19T13:28:24.870466" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//input[@data-test='password']'</msg>
+<msg time="2025-06-19T13:28:25.315240" level="INFO">xpath criteria: //input[@data-test='password']</msg>
+<arg>xpath=//input[@data-test='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-19T13:28:24.864492" elapsed="0.454116"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-19T13:28:30.324227" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-19T13:28:25.321209" elapsed="5.011086"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-06-19T13:28:30.335954" elapsed="0.009349"/>
+</kw>
+<status status="PASS" start="2025-06-19T13:27:51.930816" elapsed="38.418925"/>
+</test>
+<status status="PASS" start="2025-06-19T13:27:21.049972" elapsed="70.397351"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="PASS" start="2025-06-19T13:27:20.984000" elapsed="80.686000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="8" fail="0" skip="0">Suites</stat>
+<stat name="test sauceLoginPage 12.0, Google Pixel 6, chrome" id="s1-s1" pass="2" fail="0" skip="0">Suites.test sauceLoginPage 12.0, Google Pixel 6, chrome</stat>
+<stat name="test sauceLoginPage OS X, Monterey, Safari, 15.6" id="s1-s2" pass="2" fail="0" skip="0">Suites.test sauceLoginPage OS X, Monterey, Safari, 15.6</stat>
+<stat name="test sauceLoginPage 15, iPhone 13, safari" id="s1-s3" pass="2" fail="0" skip="0">Suites.test sauceLoginPage 15, iPhone 13, safari</stat>
+<stat name="test sauceLoginPage 15, iPhone 13, chrome" id="s1-s4" pass="2" fail="0" skip="0">Suites.test sauceLoginPage 15, iPhone 13, chrome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
