@@ -40,7 +40,11 @@ platforms:
     browserVersion: 15.6
   - deviceName: iPhone 13
     osVersion: 15
-    browserName: Chromium
+    browserName: safari
+    deviceOrientation: portrait
+  - deviceName: iPhone 13
+    osVersion: 15
+    browserName: chrome
     deviceOrientation: portrait
     
 # =======================
