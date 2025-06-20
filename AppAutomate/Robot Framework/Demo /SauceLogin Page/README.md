@@ -4,6 +4,11 @@
 
 ## Install
 
+### Robot Framework
+````powershell
+pip install robotframework
+````
+
 ---
 
 ## Deploy to Automate
