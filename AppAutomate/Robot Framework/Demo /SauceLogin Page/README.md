@@ -9,6 +9,11 @@
 pip install robotframework
 ````
 
+### browserstack-sdk
+````powershell
+pip install browserstack-sdk
+````
+
 ---
 
 ## Deploy to Automate
