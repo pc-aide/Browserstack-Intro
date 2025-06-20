@@ -14,6 +14,11 @@ pip install robotframework
 pip install browserstack-sdk
 ````
 
+### lib appium robot framework
+````powershell
+pip install robotframework-appiumlibrary
+````
+
 ---
 
 ## Deploy to Automate
