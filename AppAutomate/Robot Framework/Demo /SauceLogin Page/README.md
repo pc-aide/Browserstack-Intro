@@ -6,6 +6,7 @@
 
 ### Robot Framework
 ````powershell
+# --proxy http://<hostname:port> | optional
 pip install robotframework
 ````
 
