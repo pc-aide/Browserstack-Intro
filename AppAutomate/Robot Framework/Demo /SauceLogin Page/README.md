@@ -25,6 +25,11 @@ pip install robotframework-appiumlibrary
 pip install robotframework-pabot
 ````
 
+### lib selenium
+````powershell
+pip install robotframework-seleniumlibrary
+````
+
 ---
 
 ## Deploy to Automate
