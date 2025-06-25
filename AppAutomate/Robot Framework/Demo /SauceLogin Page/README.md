@@ -4,7 +4,8 @@
 
 ## Requirement
 1. python & pip
-2. git
+2. [browserstack local](https://www.browserstack.com/local-testing/downloads/native-app/BrowserStackLocal.msi)
+3. git ?
 
 ---
 
