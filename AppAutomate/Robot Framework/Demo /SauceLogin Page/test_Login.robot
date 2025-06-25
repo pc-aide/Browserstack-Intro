@@ -10,12 +10,14 @@ ${URL}            https://www.saucedemo.com/
 
 *** Test Cases ***
 Open Chrome On Android And Visit Saucedemo
+    [Documentation]    Ouvre Chrome sur un appareil Android et visite le site de Saucedemo.
     Open Application    ${REMOTE_URL}    platformName=Android    deviceName=${DEVICE}    os_version=${OS_VERSION}    browserName=${BROWSER}    realMobile=true    name=RobotFrameworkTest    browserstack.debug=true
     Go To Url           ${URL}
     Sleep               5s
     [Teardown]          Close Application
 
 Remplir Champs Login Saucedemo
+    [Documentation]    Remplit les champs de connexion sur le site de Saucedemo.
     Open Application    ${REMOTE_URL}    platformName=Android    deviceName=${DEVICE}    os_version=${OS_VERSION}    browserName=${BROWSER}    realMobile=true    name=RobotFrameworkTest    browserstack.debug=true
     Go To Url           ${URL}
     Sleep               2s
