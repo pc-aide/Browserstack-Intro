@@ -4,7 +4,6 @@
 
 ## Requirement
 1. python & pip
-2. git ?
 
 ---
 
