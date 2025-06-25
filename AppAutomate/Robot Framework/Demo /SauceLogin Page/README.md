@@ -40,5 +40,5 @@ pip install robotframework-seleniumlibrary
 
 ## Deploy to Automate
 ````powershell
-browserstack-sdk robot test_sauceLoginPage.robot
+browserstack-sdk robot test_Login.robot
 ````
