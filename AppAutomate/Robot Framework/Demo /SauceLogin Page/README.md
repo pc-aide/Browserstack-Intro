@@ -2,6 +2,12 @@
 
 ---
 
+## Req
+1. python & pip
+2. 
+
+---
+
 ## Install
 
 ### Robot Framework
