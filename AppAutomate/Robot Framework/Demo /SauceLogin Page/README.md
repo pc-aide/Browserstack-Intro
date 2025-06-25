@@ -4,7 +4,7 @@
 
 ## Req
 1. python & pip
-2. 
+2. git
 
 ---
 
