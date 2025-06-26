@@ -1,4 +1,4 @@
-Í# SauceLogin Page
+# SauceLogin Page
 
 ---
 
