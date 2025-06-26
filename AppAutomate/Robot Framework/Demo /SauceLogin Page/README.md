@@ -36,6 +36,15 @@ pip install robotframework-pabot
 pip install robotframework-seleniumlibrary
 ````
 
+### Install All-In-One
+````powershell
+pip install robotframework
+pip install browserstack-sdk
+pip install robotframework-appiumlibrary
+pip install robotframework-pabot
+pip install robotframework-seleniumlibrary
+````
+
 ---
 
 ## Deploy to Automate
