@@ -23,6 +23,7 @@ pip install browserstack-sdk
 
 ### lib appium robot framework
 ````powershell
+# appium for mobile
 pip install robotframework-appiumlibrary
 ````
 
@@ -33,6 +34,7 @@ pip install robotframework-pabot
 
 ### lib selenium
 ````powershell
+# selenium for web
 pip install robotframework-seleniumlibrary
 ````
 
